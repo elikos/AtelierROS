@@ -2,30 +2,7 @@
 
 Par Philippe Rivest
 
-<!-- TOC -->
-
-- [Atelier ROS - Élikos 2018](#atelier-ros---élikos-2018)
-    - [Qu’est-ce que ROS](#quest-ce-que-ros)
-    - [Pourquoi ROS](#pourquoi-ros)
-    - [Premiers pas](#premiers-pas)
-        - [Installation de ROS](#installation-de-ros)
-        - [Configuration de l’invite de commande](#configuration-de-linvite-de-commande)
-        - [Configuration du _workspace_](#configuration-du-_workspace_)
-        - [Configuration de l'éditeur de code](#configuration-de-léditeur-de-code)
-            - [Choix de l'éditeur](#choix-de-léditeur)
-            - [Configuration de CLion](#configuration-de-clion)
-            - [`clion_ros`](#clion_ros)
-    - [Exemple Drone + Gazebo + PX4](#exemple-drone--gazebo--px4)
-        - [`rosnode`](#rosnode)
-        - [`rostopic`](#rostopic)
-        - [`rosservice`](#rosservice)
-        - [Développement d'une _node_ ROS](#développement-dune-_node_-ros)
-            - [Création d'un paquetage ROS](#création-dun-paquetage-ros)
-            - [Modification de `package.xml`](#modification-de-packagexml)
-            - [Modification de `CMakeLists.txt`](#modification-de-cmakeliststxt)
-            - [Programmation de la _node_](#programmation-de-la-_node_)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [Atelier ROS - Élikos 2018](#atelier-ros---élikos-2018)auto    - [Qu’est-ce que ROS](#quest-ce-que-ros)auto    - [Pourquoi ROS](#pourquoi-ros)auto    - [Premiers pas](#premiers-pas)auto        - [Installation de ROS](#installation-de-ros)auto        - [Configuration de l’invite de commande](#configuration-de-linvite-de-commande)auto        - [Configuration du _workspace_](#configuration-du-_workspace_)auto        - [Configuration de l'éditeur de code](#configuration-de-léditeur-de-code)auto            - [Choix de l'éditeur](#choix-de-léditeur)auto            - [Configuration de CLion](#configuration-de-clion)auto            - [`clion_ros`](#clion_ros)auto    - [Exemple Drone + Gazebo + PX4](#exemple-drone--gazebo--px4)auto        - [`rosnode`](#rosnode)auto        - [`rostopic`](#rostopic)auto        - [`rosservice`](#rosservice)auto        - [Développement d'une _node_ ROS](#développement-dune-_node_-ros)auto            - [Création d'un paquetage ROS](#création-dun-paquetage-ros)auto            - [Modification de `package.xml`](#modification-de-packagexml)auto            - [Modification de `CMakeLists.txt`](#modification-de-cmakeliststxt)auto            - [Programmation de la _node_](#programmation-de-la-_node_)autoauto<!-- /TOC -->
 
 ## Qu’est-ce que ROS
 
@@ -119,7 +96,7 @@ Tout d'abord, nous devons cloner puis compiler le code de PX4 sur [disponible su
 _N.B: Pour l'installation des dépendances, voir `install_pxr_deps.sh`._
 
 ```bash
-git clone git@github.com:PX4/Firmware.git PX4-Firmware
+git clone https://github.com/PX4/Firmware.git PX4-Firmware
 cd PX4-Firmware
 make posix_sitl_default gazebo
 ```
